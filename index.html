@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Sketch It!</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Sketch It</h1>
+    <div class="container center-items">
+        <h1>Sketch-It</h1>
+        <div class="content-container">
+            <div class="button-container">
+                <input id="color" type="color" value="#000000">
+                <div class="size-form">
+                    <label for="range">Size</label>
+                    <input id="box-size" type="range" min="8" max="32" value="16">
+                    <h3 id="size-value" class="size-value">16 x 16</h3>
+                </div>
+                <div class="grid-border-form">
+                    <input type="checkbox" name="grid-border" id="checkbox">
+                    <label for="checkbox">Grid Border</label>
+                </div>
+                <button id="clearBtn">Clear</button>
+            </div>
+            <div class="grid-container" id="grid-container">
+            </div>
+        </div>
     </div>
 </body>
 </html>
