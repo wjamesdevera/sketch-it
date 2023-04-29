@@ -13,17 +13,6 @@ function setCurrentSize(newSize) {
     currentSize = newSize;
 }
 
-function setEraser() {
-    if (!eraserOn) {
-        eraserOn = true;
-        eraser.style.backgroundColor = '#000000';
-        eraser.style.color = '#FFFFFF';
-    } else {
-        eraser.style.backgroundColor = '#FFFFFF';
-        eraser.style.color = '#000000';
-        eraserOn = false;
-    }
-}
 
 
 const color = document.getElementById('color');
@@ -45,6 +34,18 @@ eraser.onclick = () => setEraser();
 let mouseDown = false
 document.body.onmousedown = () => (mouseDown = true);
 document.body.onmouseup = () => (mouseDown = false);
+
+function setEraser() {
+    if (!eraserOn) {
+        eraserOn = true;
+        eraser.style.backgroundColor = '#000000';
+        eraser.style.color = '#FFFFFF';
+    } else {
+        eraser.style.backgroundColor = '#FFFFFF';
+        eraser.style.color = '#000000';
+        eraserOn = false;
+    }
+}
 
 
 function changeSize(value) {
