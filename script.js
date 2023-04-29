@@ -38,12 +38,14 @@ document.body.onmouseup = () => (mouseDown = false);
 function setEraser() {
     if (!eraserOn) {
         eraserOn = true;
+        console.log("eraser on")
         eraser.style.backgroundColor = '#000000';
         eraser.style.color = '#FFFFFF';
     } else {
+        eraserOn = false;
         eraser.style.backgroundColor = '#FFFFFF';
         eraser.style.color = '#000000';
-        eraserOn = false;
+        console.log("eraser off")
     }
 }
 
