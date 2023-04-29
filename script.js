@@ -1,6 +1,5 @@
 const DEFAULT_COLOR = '#000000';
 const DEFAULT_SIZE = 16;
-const DEFAULT_MODE = 'pen';
 
 let currentColor = DEFAULT_COLOR;
 let currentSize = DEFAULT_SIZE;
